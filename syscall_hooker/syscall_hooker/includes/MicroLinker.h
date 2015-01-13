@@ -58,7 +58,6 @@ public:
     ~MicroLinker();
     
     bool InjectAndHook(sysent_t* pSysent);
-    bool AddNewHook(std::string syscall, std::string hookName);
     bool RestoreHook(std::string syscall);
     
 private:

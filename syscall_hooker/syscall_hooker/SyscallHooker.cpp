@@ -171,14 +171,14 @@ bool SyscallHooker::AddSysCallHook(std::string systemCallName, std::string hookN
 
 bool SyscallHooker::RestoreSysCall(std::string systemCallName)
 {
-    kResult result = KERN_FAILURE;
+    bool success = false;
     
-    if (isInGoodState == true)
+    if (isInGoodState == true && pMicroLinker != nullptr)
     {
-        // Check to make sure we have hooks installed
+        success = pMicroLinker->RestoreHook(systemCallName);
     }
     
-    return result;
+    return success;
 }
 
 // Based off of fG!'s bruteforcesysent https://github.com/gdbinit/bruteforcesysent

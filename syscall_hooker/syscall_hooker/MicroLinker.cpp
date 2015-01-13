@@ -75,31 +75,18 @@ bool MicroLinker::RestoreHook(std::string syscall)
     {
         KernelInterface& kernInterface = kernel.GetKernelInterface();
         
-        // Get the address of the entry for the system call to be hooked
+        // Get the address of the entry for the system call to that was hooked
         tAddress syscallAddressInTable = addressOfShadowTable + (sizeof(sysent_t) * sysentSymToOffset.at(syscall));
         
         tAddress originalSyscallAddress = kernelSymbolMap[syscall];
         
-        result = kernInterface.WriteToKernelMemory(syscallAddressInTable, reinterpret_cast<unsigned char*>(originalSyscallAddress), sizeof(tAddress));
+        result = kernInterface.WriteToKernelMemory(syscallAddressInTable, reinterpret_cast<unsigned char*>(&originalSyscallAddress), sizeof(tAddress));
         
         if (result == KERN_SUCCESS)
         {
             success = true;
         }
         
-    }
-    
-    return success;
-}
-
-bool MicroLinker::AddNewHook(std::string syscall, std::string hookName)
-{
-    bool success = false;
-    
-    // Make sure we have a valid address to write to
-    if (injectedAddress != 0)
-    {
-        // TODO
     }
     
     return success;
