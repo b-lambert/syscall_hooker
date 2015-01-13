@@ -4,6 +4,8 @@ syscall_hooker is a library for hooking system calls globally on OS X 10.9.5. It
 
 * 10.10 support is being worked on, although I'm not giving or committing to any dates
 * You need to create your own code signing certificate (self signed cert will work) for the kext (Or use an existing one)
+* All kexts must be compiled with the -mcmodel=large flag
+* Don't forget to check the "Link Binary with Library" in the Xcode project, it'll solve the clang error
 * Needs r00tz
 
 Not For The Faint of Heart
