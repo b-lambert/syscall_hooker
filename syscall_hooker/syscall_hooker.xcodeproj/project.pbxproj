@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		619CC2161A5E4A4400761484 /* KernelInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 619CC2141A5E4A4400761484 /* KernelInterface.cpp */; };
+		619CC2201A5E6CBA00761484 /* KernelInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 619CC21E1A5E6CBA00761484 /* KernelInfo.cpp */; };
+		619CC2271A5E843C00761484 /* Kernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 619CC2251A5E843C00761484 /* Kernel.cpp */; };
+		61B16E951A626268000033EF /* SysentMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61B16E941A626268000033EF /* SysentMap.cpp */; };
+		61B16EA51A632FF0000033EF /* Kernel.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B16E9F1A632FF0000033EF /* Kernel.h */; };
+		61B16EA61A632FF0000033EF /* KernelDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B16EA01A632FF0000033EF /* KernelDefs.h */; };
+		61B16EA71A632FF0000033EF /* KernelInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B16EA11A632FF0000033EF /* KernelInfo.h */; };
+		61B16EA81A632FF0000033EF /* KernelInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B16EA21A632FF0000033EF /* KernelInterface.h */; };
+		61B16EA91A632FF0000033EF /* MicroLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B16EA31A632FF0000033EF /* MicroLinker.h */; };
+		61B16EAA1A632FF0000033EF /* SyscallHooker.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B16EA41A632FF0000033EF /* SyscallHooker.h */; };
+		61B295561A5FC2FB0095E372 /* MicroLinker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61B295551A5FC2FB0095E372 /* MicroLinker.cpp */; };
+		61BB0D3F1A5E49E800880F4E /* SyscallHooker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61BB0D3E1A5E49E800880F4E /* SyscallHooker.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		619CC2141A5E4A4400761484 /* KernelInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KernelInterface.cpp; sourceTree = "<group>"; };
+		619CC21E1A5E6CBA00761484 /* KernelInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KernelInfo.cpp; sourceTree = "<group>"; };
+		619CC2251A5E843C00761484 /* Kernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kernel.cpp; sourceTree = "<group>"; };
+		61B16E941A626268000033EF /* SysentMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SysentMap.cpp; sourceTree = "<group>"; };
+		61B16E9F1A632FF0000033EF /* Kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kernel.h; sourceTree = "<group>"; };
+		61B16EA01A632FF0000033EF /* KernelDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KernelDefs.h; sourceTree = "<group>"; };
+		61B16EA11A632FF0000033EF /* KernelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KernelInfo.h; sourceTree = "<group>"; };
+		61B16EA21A632FF0000033EF /* KernelInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KernelInterface.h; sourceTree = "<group>"; };
+		61B16EA31A632FF0000033EF /* MicroLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroLinker.h; sourceTree = "<group>"; };
+		61B16EA41A632FF0000033EF /* SyscallHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyscallHooker.h; sourceTree = "<group>"; };
+		61B295551A5FC2FB0095E372 /* MicroLinker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MicroLinker.cpp; sourceTree = "<group>"; };
+		61BB0D371A5E49E800880F4E /* syscall_hooker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = syscall_hooker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61BB0D3E1A5E49E800880F4E /* SyscallHooker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SyscallHooker.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61BB0D341A5E49E800880F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		619CC2241A5E841900761484 /* Kernel */ = {
+			isa = PBXGroup;
+			children = (
+				619CC2141A5E4A4400761484 /* KernelInterface.cpp */,
+				619CC21E1A5E6CBA00761484 /* KernelInfo.cpp */,
+				619CC2251A5E843C00761484 /* Kernel.cpp */,
+				61B16E941A626268000033EF /* SysentMap.cpp */,
+			);
+			name = Kernel;
+			sourceTree = "<group>";
+		};
+		61B16E9E1A632FF0000033EF /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				61B16E9F1A632FF0000033EF /* Kernel.h */,
+				61B16EA01A632FF0000033EF /* KernelDefs.h */,
+				61B16EA11A632FF0000033EF /* KernelInfo.h */,
+				61B16EA21A632FF0000033EF /* KernelInterface.h */,
+				61B16EA31A632FF0000033EF /* MicroLinker.h */,
+				61B16EA41A632FF0000033EF /* SyscallHooker.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		61BB0D2E1A5E49E800880F4E = {
+			isa = PBXGroup;
+			children = (
+				61BB0D391A5E49E800880F4E /* syscall_hooker */,
+				61BB0D381A5E49E800880F4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61BB0D381A5E49E800880F4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61BB0D371A5E49E800880F4E /* syscall_hooker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61BB0D391A5E49E800880F4E /* syscall_hooker */ = {
+			isa = PBXGroup;
+			children = (
+				61B16E9E1A632FF0000033EF /* includes */,
+				619CC2241A5E841900761484 /* Kernel */,
+				61BB0D3E1A5E49E800880F4E /* SyscallHooker.cpp */,
+				61B295551A5FC2FB0095E372 /* MicroLinker.cpp */,
+			);
+			path = syscall_hooker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61BB0D351A5E49E800880F4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B16EA91A632FF0000033EF /* MicroLinker.h in Headers */,
+				61B16EA81A632FF0000033EF /* KernelInterface.h in Headers */,
+				61B16EA61A632FF0000033EF /* KernelDefs.h in Headers */,
+				61B16EA51A632FF0000033EF /* Kernel.h in Headers */,
+				61B16EAA1A632FF0000033EF /* SyscallHooker.h in Headers */,
+				61B16EA71A632FF0000033EF /* KernelInfo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61BB0D361A5E49E800880F4E /* syscall_hooker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61BB0D421A5E49E800880F4E /* Build configuration list for PBXNativeTarget "syscall_hooker" */;
+			buildPhases = (
+				61BB0D331A5E49E800880F4E /* Sources */,
+				61BB0D341A5E49E800880F4E /* Frameworks */,
+				61BB0D351A5E49E800880F4E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = syscall_hooker;
+			productName = syscall_hooker;
+			productReference = 61BB0D371A5E49E800880F4E /* syscall_hooker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61BB0D2F1A5E49E800880F4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = sekrit_sauce;
+				TargetAttributes = {
+					61BB0D361A5E49E800880F4E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 61BB0D321A5E49E800880F4E /* Build configuration list for PBXProject "syscall_hooker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61BB0D2E1A5E49E800880F4E;
+			productRefGroup = 61BB0D381A5E49E800880F4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61BB0D361A5E49E800880F4E /* syscall_hooker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61BB0D331A5E49E800880F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619CC2201A5E6CBA00761484 /* KernelInfo.cpp in Sources */,
+				619CC2161A5E4A4400761484 /* KernelInterface.cpp in Sources */,
+				61BB0D3F1A5E49E800880F4E /* SyscallHooker.cpp in Sources */,
+				61B295561A5FC2FB0095E372 /* MicroLinker.cpp in Sources */,
+				61B16E951A626268000033EF /* SysentMap.cpp in Sources */,
+				619CC2271A5E843C00761484 /* Kernel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61BB0D401A5E49E800880F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		61BB0D411A5E49E800880F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		61BB0D431A5E49E800880F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		61BB0D441A5E49E800880F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61BB0D321A5E49E800880F4E /* Build configuration list for PBXProject "syscall_hooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61BB0D401A5E49E800880F4E /* Debug */,
+				61BB0D411A5E49E800880F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61BB0D421A5E49E800880F4E /* Build configuration list for PBXNativeTarget "syscall_hooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61BB0D431A5E49E800880F4E /* Debug */,
+				61BB0D441A5E49E800880F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61BB0D2F1A5E49E800880F4E /* Project object */;
+}

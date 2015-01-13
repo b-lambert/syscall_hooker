@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:sampleApp/sampleApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:syscall_hooker/syscall_hooker.xcodeproj">
+   </FileRef>
+</Workspace>
